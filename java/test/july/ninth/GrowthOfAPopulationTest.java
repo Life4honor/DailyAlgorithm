@@ -2,6 +2,7 @@ package july.ninth;
 
 import static org.junit.Assert.*;
 
+import july.ninth.GrowthOfAPopulation.GrowthOfAPopulation;
 import org.junit.Test;
 
 public class GrowthOfAPopulationTest {

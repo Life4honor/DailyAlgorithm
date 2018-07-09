@@ -1,4 +1,4 @@
-package july.ninth;
+package july.ninth.GrowthOfAPopulation;
 
 public class GrowthOfAPopulation {
 
