@@ -1,5 +1,6 @@
 package july.eleventh;
 
+import july.eleventh.WriteNumberInExpandedForm.WriteNumberInExpandedForm;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
