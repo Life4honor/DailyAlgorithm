@@ -10,15 +10,4 @@ public class Palindrome {
         }
         return result;
     }
-
-    public static boolean isPalindromeString(String input){
-        return input.substring(0, input.length() / 2).equals(input.substring(input.length() / 2));
-    }
-
-    public static void main(String[] args) {
-        System.out.println(isPalindromeChar("test"));
-        System.out.println(isPalindromeChar("teetteet"));
-        System.out.println(isPalindromeString("test"));
-        System.out.println(isPalindromeString("teetteet"));
-    }
 }
