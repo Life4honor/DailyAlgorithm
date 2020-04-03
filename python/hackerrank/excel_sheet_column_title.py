@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/excel-sheet-column-title/
+# https://leetcode.com/problems/excel-sheet-column-title/problem
 
 class Solution:
     def convertToTitle(self, n: int) -> str:
