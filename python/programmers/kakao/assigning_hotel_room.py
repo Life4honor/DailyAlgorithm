@@ -1,16 +1,19 @@
 def solution(k, room_number):
-    occupied_rooms = {}
+    occupied = {}
     answer = []
-    for room in room_number:
-        if room not in occupied_rooms:
-            occupied_rooms[room] = True
-            answer.append(room)
+    for request in room_number:
+        if request not in occupied:
+            occupied[request] = request + 1
+            answer.append(request)
             continue
-
-        room_no = room
-        while room_no in occupied_rooms:
-            room_no += 1
-        occupied_rooms[room_no] = True
-        answer.append(room_no)
-
+        
+        assigned = occupied[request]
+        while assigned in occupied:
+            next_ = occupied[assigned]
+            occupied[assigned] = occupied[next_] if next_ in occupied else next_
+            assigned = next_
+        
+        occupied[assigned] = assigned + 1
+        answer.append(assigned)
+    
     return answer
