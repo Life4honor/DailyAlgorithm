@@ -10,9 +10,13 @@ def solution(prices):
         index_price[idx] = price
         flag[idx] = True
         
-    for idx, price in enumerate(prices):
-        pos = idx + 1
+    for idx, price in enumerate(prices):    
+        if price == 1:
+            result[idx] = length - idx - 1
+            continue
             
+        pos = idx + 1
+        
         while flag[idx] and pos < length:
             if index_price[pos] < price:
                 flag[idx] = False
